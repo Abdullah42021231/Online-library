@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Library Management</h1>
+    <nav>
+      <a href="/book">Books</a>
+      <a href="/author">Authors</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to the Library</h2>
+      <p>Select a category to explore more!</p>
+    </section>
+  </main>
+  <main>
+    <section id="add-book">
+      <h2>Add Book</h2>
+      <input type="text" id="book-title" placeholder="Book Title">
+      <input type="text" id="book-author" placeholder="Author Name">
+      <button onclick="addBook()">Add Book</button>
+    </section>
+
+    <section id="get-books">
+      <h2>Get All Books</h2>
+      <button onclick="getAllBooks()">Fetch Books</button>
+      <ul id="books-list"></ul>
+    </section>
+
+    <section id="update-book">
+      <h2>Update Book</h2>
+      <input type="text" id="update-id" placeholder="Book ID">
+      <input type="text" id="update-title" placeholder="New Title">
+      <input type="text" id="update-author" placeholder="New Author">
+      <button onclick="updateBook()">Update Book</button>
+    </section>
+
+    <section id="delete-book">
+      <h2>Delete Book</h2>
+      <input type="text" id="delete-id" placeholder="Book ID">
+      <button onclick="deleteBook()">Delete Book</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2024 Library App</p>
+  </footer>
+</body>
+</html>
